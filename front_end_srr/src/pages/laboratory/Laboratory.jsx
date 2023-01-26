@@ -22,7 +22,7 @@ export const Laboratory = () => {
 
   return (
     <LaboratoryContainer>
-      <h1>Laboratory</h1>
+      <h2>Laboratory</h2>
       <ReportContainer1>
         <Box
           sx={{

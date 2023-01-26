@@ -55,7 +55,7 @@ export const Dashboard = () => {
 
   return (
     <DashboardContainer>
-      <h1>Dashboard</h1>
+      <h2>Dashboard</h2>
       <ReportContainer1>
         {departments.map((department, i) => (
           <Box
