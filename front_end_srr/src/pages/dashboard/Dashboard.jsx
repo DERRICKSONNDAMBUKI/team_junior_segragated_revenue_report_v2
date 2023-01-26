@@ -26,6 +26,7 @@ const DateForm = styled.div`
   height: 70px;
   display: flex;
   margin-bottom: 10px;
+  flex: 1;
 `;
 const FilterButton = styled.div`
   width: 10px;
@@ -35,8 +36,9 @@ const FilterButton = styled.div`
 `;
 const ChartContainer = styled.div`
   background-color: lightcyan;
-  width: 100%;
   height: 100%;
+  flex: 1;
+  padding: 5px;
 `;
 const departments = [
   "department1",
@@ -103,8 +105,10 @@ export const Dashboard = () => {
             backgroundColor: "white",
             flex: 2,
             margin: "5px",
-            height: "400px",
+            height: "500px",
             borderRadius: "4px",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
           <form // onSubmit={}
@@ -161,8 +165,8 @@ export const Dashboard = () => {
                   sx={{
                     width: "100%",
                     color: "black",
-                    backgroundColor: "lightgray",
-                    fontWeight:'bold'
+                    backgroundColor: "#fafafa",
+                    fontWeight: "bold",
                   }}
                 >
                   Filter
@@ -180,7 +184,6 @@ export const Dashboard = () => {
             backgroundColor: "lightblue",
             flex: 1,
             margin: "5px",
-            height: "400px",
             borderRadius: "4px",
           }}
         >
