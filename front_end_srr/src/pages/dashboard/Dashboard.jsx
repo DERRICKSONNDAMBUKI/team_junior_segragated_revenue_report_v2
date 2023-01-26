@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 import React from "react";
 import styled from "styled-components";
 
-const DashboardContainer = styled.div`
+export const DashboardContainer = styled.div`
   background-color: #fafafa;
   flex: 1;
   display: flex;
@@ -14,27 +14,27 @@ const DashboardContainer = styled.div`
   border-radius: 5px;
 `;
 
-const ReportContainer1 = styled.div`
+export const ReportContainer1 = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
 const ReportContainer2 = styled(ReportContainer1)``;
 
-const DateForm = styled.div`
+export const DateForm = styled.div`
   /* background-color: lightcyan; */
   height: 70px;
   display: flex;
   margin-bottom: 10px;
   flex: 1;
 `;
-const FilterButton = styled.div`
+export const FilterButton = styled.div`
   width: 10px;
   flex: 1;
   margin: 10px;
   margin-top: 15px;
 `;
-const ChartContainer = styled.div`
+export const ChartContainer = styled.div`
   background-color: lightcyan;
   height: 100%;
   flex: 1;
