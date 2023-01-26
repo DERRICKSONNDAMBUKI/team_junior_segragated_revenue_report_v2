@@ -36,7 +36,7 @@ export const BarChart = ({ width, height, data }) => {
       .attr("y", (d) => height)
       .attr("width", 40)
       .attr("height", 0)
-      .attr("fill", "orange")
+      .attr("fill", "lightblue")
       .transition()
       .duration(300)
       .attr("height", (d) => yScale(d))

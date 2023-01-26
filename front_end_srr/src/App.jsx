@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/sidebar/SideBar";
 import Topbar from "./components/topbar/Topbar";
+import { ChartTest } from "./pages/chart_test/ChartTest";
 import { Dashboard } from "./pages/dashboard/Dashboard";
-import { Home } from "./pages/Home";
 import { Laboratory } from "./pages/laboratory/Laboratory";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
           {/* <Route path="/" element={<Home />} exact /> */}
           <Route path="/" element={<Dashboard />} exact/>
           <Route path="/laboratory" element={<Laboratory />} />
+          <Route path="/charttest" element={<ChartTest />} />
 
           {/* no route */}
           <Route

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { BarChart } from "../components/charts/BarChart";
-import { drawChart, initChart } from "../components/charts/BasicD3";
+import { BarChart } from "../../components/charts/BarChart";
+import { drawChart, initChart } from "../../components/charts/BasicD3";
 
 const dataset = [
   [10, 30, 40, 20],
@@ -12,7 +12,7 @@ const dataset = [
 
 var i = 0;
 
-export const Home = () => {
+export const ChartTest = () => {
   const [data, setData] = useState([]);
 // BasicD3.jsx
 //   useEffect(() => {
@@ -35,11 +35,11 @@ const changeData = ()=>{
 }
   return (
     <div className="App">
-      <h1>Home</h1>
+      <h1>ChartTest</h1>
       <h4>Graphs for D3 with react</h4>
       {/* <button onClick={changeChart}>Change Data</button>  */}
       <button onClick={changeData}>Change Data</button>
-      <BarChart width ={600} height={400} data={data}/>
+      <BarChart width ={'100vh'} height={300} data={data}/>
     </div>
   );
 };
